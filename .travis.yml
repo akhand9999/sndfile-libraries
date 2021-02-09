@@ -15,7 +15,9 @@ jobs:
         - sourceline: 'deb-src http://archive.ubuntu.com/ubuntu bionic-security main restricted'
 
   - os: linux
-    arch: arm64
+    arch: arm64-graviton2
+    virt: lxd
+    group: edge
     dist: bionic
     addons:
       apt:
